@@ -3,7 +3,12 @@
 
 // 1. printIndices
 function printIndices(items) {
-  // Replace this with your code
+  for (const i in items - 1){
+    console.log(`${items[i]} ${i}`);
+  }
+
+  // for i in range(len(items)):
+  // print(f'{items[i]} {i}')
 }
 
 
