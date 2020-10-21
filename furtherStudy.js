@@ -3,12 +3,12 @@
 
 function wordsInCommon(words1, words2) {
 
-  const words1 = new Set(words1);
-  const words2 = new Set(wrods2);
+  const words1Set = new Set(words1);
+  const words2Set = new Set(words2);
   let result = new Set();
 
-  for (words of words1) {
-    for (word of words2) {
+  for (const word of words1Set) {
+    if (words2Set.has(word)) {
       result.add(word);
     }
   }
