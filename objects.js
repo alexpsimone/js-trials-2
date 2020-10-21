@@ -3,7 +3,19 @@
 
 // 1. countWords
 function countWords(phrase) {
-  // Replace this with your code
+  const newPhrase = phrase.split(' ');
+  let phraseObject = {};
+  for (const word of newPhrase) {
+    // Syntax below returns {'word1': NaN, 'word2': NaN, ...}
+    // phraseObject[word] += 1;
+    if (phraseObject.hasOwnProperty(word)) {
+      phraseObject[word] += 1;
+    } else {
+      phraseObject[word] = 1;
+    }
+
+  }
+  return phraseObject;
 }
 
 
